@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Better Sleep Website — Style Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Better Sleep Website — Style Guide</h1>
+    <nav aria-label="Main">
+      <details class="nav">
+        <summary class="nav__button">Menu</summary>
+        <ul class="nav__links">
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#quote">Quote</a></li>
+        </ul>
+      </details>
+    </nav>
+  </header>
+
+  <main>
+    <section id="typography">
+      <h2>Typography</h2>
+      <h3>Heading Level 3</h3>
+      <h4>Heading Level 4</h4>
+      <p>This section demonstrates text structure and hierarchy.</p>
+    </section>
+
+    <section id="colors">
+      <h2>Colors</h2>
+      <ul class="swatches" role="list">
+        <li><span class="swatch --primary" aria-hidden="true"></span><code>--clr-primary (light orange)</code></li>
+        <li><span class="swatch --muted" aria-hidden="true"></span><code>--clr-muted (soft gray)</code></li>
+        <li><span class="swatch --ink" aria-hidden="true"></span><code>--clr-ink (text)</code></li>
+        <li><span class="swatch --bg" aria-hidden="true"></span><code>--clr-bg (background)</code></li>
+      </ul>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+      <p>
+        Learn more about healthy sleep habits at the
+        <a href="https://www.sleepfoundation.org/sleep-hygiene" target="_blank" rel="noopener">Sleep Foundation website</a>.
+      </p>
+
+      <!-- Linked image with caption -->
+      <a href="https://www.sleepfoundation.org/bedroom-environment" target="_blank" rel="noopener" class="linked-image">
+        <img src="images/sleeping.jpg" alt="Person sleeping peacefully" />
+      </a>
+      <p class="caption">Click the image to learn more about creating a sleep-friendly bedroom environment.</p>
+    </section>
+
+    <section id="buttons">
+      <h2>Buttons</h2>
+      <div class="button-row">
+        <button class="btn">Primary Button</button>
+        <button class="btn btn-accent">Accent Button</button>
+        <button class="btn" disabled>Disabled</button>
+      </div>
+    </section>
+
+    <section id="forms">
+      <h2>Form Example</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="you@example.com" />
+      </form>
+    </section>
+
+    <section id="quote">
+      <h2>Quote</h2>
+      <blockquote class="quote">
+        “Sleep is the best meditation.”
+        <cite>— Dalai Lama</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <strong>Deborah Odumusi</strong> for DGM6501 — © 2025 Better Sleep Style Guide</p>
+  </footer>
+
+</body>
+</html>
