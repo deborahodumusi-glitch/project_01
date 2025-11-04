@@ -3,97 +3,91 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Better Sleep Website — Style Guide</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Better Sleep Website — Component Style Guide</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Better Sleep Website — Style Guide</h1>
-    <nav aria-label="Main">
-      <details class="nav">
-        <summary class="nav__button">Menu</summary>
-        <ul class="nav__links">
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#colors">Colors</a></li>
-          <li><a href="#links">Links</a></li>
-          <li><a href="#buttons">Buttons</a></li>
-          <li><a href="#forms">Forms</a></li>
-          <li><a href="#quote">Quote</a></li>
-        </ul>
-      </details>
+    <!-- REQUIRED: Heading Level 1 -->
+    <h1>Better Sleep: Component Library (H1)</h1>
+    
+    <!-- REQUIRED: Menu or Navigation Button -->
+    <nav aria-label="Main Website Navigation">
+      <ul class="nav-links">
+        <li><a href="#typography">Home</a></li>
+        <li><a href="#forms">Log Data</a></li>
+        <li><a href="#image-link">Resources</a></li>
+      </ul>
     </nav>
+    <button class="cta-button">Start Tracking</button>
   </header>
 
   <main>
     <section id="typography">
-      <h2>Typography</h2>
-      <h3>Heading Level 3</h3>
-      <h4>Heading Level 4</h4>
-      <p>This section demonstrates text structure and hierarchy.</p>
-    </section>
-
-    <section id="colors">
-      <h2>Colors</h2>
-      <ul class="swatches" role="list">
-        <li><span class="swatch --primary" aria-hidden="true"></span><code>--clr-primary (light orange)</code></li>
-        <li><span class="swatch --muted" aria-hidden="true"></span><code>--clr-muted (soft gray)</code></li>
-        <li><span class="swatch --ink" aria-hidden="true"></span><code>--clr-ink (text)</code></li>
-        <li><span class="swatch --bg" aria-hidden="true"></span><code>--clr-bg (background)</code></li>
-      </ul>
-    </section>
-
-    <section id="links">
-      <h2>Links</h2>
+      <!-- REQUIRED: Heading Level 2 -->
+      <h2>Typography & Hierarchy (H2)</h2>
+      
+      <!-- REQUIRED: Heading Level 3 -->
+      <h3>Log Sleep Session (H3)</h3>
+      
+      <!-- REQUIRED: Heading Level 4 -->
+      <h4>Quick tips for better sleep (H4)</h4>
+      
+      <!-- REQUIRED: A Paragraph -->
       <p>
-        Learn more about healthy sleep habits at the
-        <a href="https://www.sleepfoundation.org/sleep-hygiene" target="_blank" rel="noopener">Sleep Foundation website</a>.
+        This section demonstrates the standard body text used across the Better Sleep Website. It needs to be clear and reassuring. Good sleep is essential for mental health and productivity, so we try to keep our text easy to read.
+        <!-- REQUIRED: A link within a paragraph of text -->
+        You can find more detailed information on sleep cycles at the 
+        <a href="https://www.sleepfoundation.org/sleep-hygiene" class="external-link">Sleep Foundation website</a>.
       </p>
-
-      <figure class="linked-image">
-        <a href="https://www.sleepfoundation.org/bedroom-environment" target="_blank" rel="noopener">
-          <img src="images/sleeping.jpg" alt="Person sleeping peacefully" />
-        </a>
-        <figcaption class="caption">Click the image to learn more about creating a sleep-friendly bedroom environment.</figcaption>
-      </figure>
-
-      <h3>Link States Specimen</h3>
-      <p>
-        <a href="https://example.com">Default link</a> ·
-        <a href="https://developer.mozilla.org/">External link</a> ·
-        <a href="#links">In-page link</a>
-      </p>
-    </section>
-
-    <section id="buttons">
-      <h2>Buttons</h2>
-      <div class="button-row">
-        <button class="btn">Primary Button</button>
-        <button class="btn btn-accent">Accent Button</button>
-        <button class="btn" disabled>Disabled</button>
-      </div>
+      
+      <!-- EXTRA ELEMENT #1: Horizontal Rule -->
+      <hr>
     </section>
 
     <section id="forms">
-      <h2>Form Example</h2>
-      <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="you@example.com" />
-        <button type="submit" class="btn">Submit</button>
+      <h2>Form & Input (Input Field with Label)</h2>
+      
+      <!-- REQUIRED: Text Input Field with a Label -->
+      <form class="data-form">
+        <label for="duration-input">Enter Sleep Duration (Hours):</label>
+        <input type="text" id="duration-input" placeholder="e.g., 7.5 hours" aria-describedby="input-help"/>
+        <small id="input-help">Use only numbers and decimals.</small>
       </form>
     </section>
 
-    <section id="quote">
-      <h2>Quote</h2>
-      <blockquote class="quote">
-        “Sleep is the best meditation.”
-        <cite>— Dalai Lama</cite>
+    <section id="image-link">
+      <h2>Image Component (Linked Image)</h2>
+      
+      <!-- REQUIRED: An Image that links to another URL -->
+      <a href="https://www.sleepfoundation.org/bedroom-environment" target="_blank" rel="noopener" class="linked-image-wrapper" aria-label="View resource on creating a better bedroom environment">
+        <img src="sleeping.jpg" alt="A person sleeping peacefully with a sleep mask" class="linked-img" />
+      </a>
+         </section>
+    
+    <!-- EXTRA ELEMENT #2: Blockquote -->
+    <section id="quote-block">
+      <h2>Testimonial Block</h2>
+      <blockquote class="testimonial-quote">
+        “Sleep is the best meditation—I feel so much better since I started tracking.”
+        <cite>— Better Sleep User, R.K.</cite>
       </blockquote>
+    </section>
+
+    <!-- EXTRA ELEMENT #3: Unordered List -->
+    <section id="list-component">
+      <h2>Unordered List Component</h2>
+      <ul class="feature-list">
+        <li>Track your sleep phases (REM, Deep, Light).</li>
+        <li>Get personalized, daily recovery scores.</li>
+        <li>Integrate with your favorite health apps.</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>Created by <strong>Deborah Odumusi</strong> for DGM6501 — © 2025 Better Sleep Style Guide</p>
+    <p>DGM6501 Project 01 Submission</p>
   </footer>
 
 </body>
